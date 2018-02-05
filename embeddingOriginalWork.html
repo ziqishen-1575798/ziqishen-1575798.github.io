@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<h1> Jerry's Homepage</h1>
+		<p>Hi! Welcome to my homepage. I'm Jerry Shen, I'm a sophomore at University of Washington.</p>
+		<h2> My favorite youtube videos:</h2>
+		
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/WQ8zT_HGn0U?start=180" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		
+		
+	</body>
+	
+	
+	<body>
+		<video width="560" height="315" controls>
+		<source src="Seahwaks 2013 Promo.mp4" type="video/mp4">
+		<source src="Seahwaks 2013 Promo.ogg" type="video/ogg">
+		Your browser does not support HTML5 video.
+		</video>
+		<p>
+		Video courtesy of 
+		<a href="https://www.youtube.com/watch?v=Qlf7sN2p59s" target="_blank">Seahawks vs. Cowboys</a>.
+		</p>
+	</body>
+	<body>
+		<h2> My Location:</h2>
+		<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+		<script>
+		function myMap() {
+			var mapOptions = {
+				center: new google.maps.LatLng(47.655, -122.3035),
+				zoom: 10,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+		</script>
+
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB107mI1LI490p6u4v668Y_LapOYlwnP9I&callback=myMap"></script>
+	</body>
+	<body>
+		<h2> Weather Forecast:</h2>
+		<table style="width:100%">
+			<tr>
+				<th>Monday</th>
+				<th>Tuesday</th> 
+				<th>Wednesday</th>
+			</tr>
+		    <tr>
+			    <td>Low:51 degree F</td>
+			    <td>Low:42 degree F</td> 
+			    <td>Low:45 degree F</td>
+		    </tr>
+		    <tr>
+			    <td>High:63 degree F</td>
+			    <td>High:61 degree F</td> 
+			    <td>High:58 degree F</td>
+		    </tr>
+		</table>
+	</body>
+	
+	
+</html>
