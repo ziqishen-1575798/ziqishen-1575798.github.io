@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jerry's Homepage</title>
+	</head>
+	<body>
+	<style>
+			p.dotted {border-style: dotted;}
+	</style>
+	<p class="dotted">Welcome to my homepage!</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Qlf7sN2p59s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+	</iframe>
+	
+	<div id="map" style="width:100%;height:400px;"></div>
+
+	<script>
+	function myMap() {
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {
+		center: new google.maps.LatLng(47.6062, -122.3321), zoom: 10
+	  };
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXsBZZy9CqEsY_Ro2bN9W5-NJh5yxg9P8&callback=myMap">
+	</script>
+	
+	</body>
+</html>
